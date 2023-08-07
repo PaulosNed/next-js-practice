@@ -1,7 +1,6 @@
 import { redirect } from "next/navigation";
 import { NextResponse } from "next/server";
-
-const endpoint = 'http://localhost:4000/posts';
+import { endpoint } from "../../config";
 
 export async function getBlogs() {
   const res = await fetch(`${endpoint}`, {
